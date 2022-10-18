@@ -11,12 +11,32 @@ body {
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+
+  /* added below */
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+/* added this div to css (was already in index.html */
+.links {
+  display: flex;
+  gap: 16px;
+  margin-left: 16px;
+}
+
+/* made this div */
+.right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .profile-image {
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
@@ -45,4 +65,7 @@ a {
 
 ul {
   list-style-type: none;
+
+  /* added below */
+  padding: 0;
 }
